@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Badget Calculator</title>
+  </head>
+  <body>
+    <div class="form-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="main-form text-white">
+              <h1 class="text-center">This Is Badget Calculator</h1>
+              <h2 class="text-center mb-4">
+                Income : <span id="income">27000</span>
+              </h2>
+              <div class="mb-3">
+                <label for="Rent" class="form-label">Rent</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Rent"
+                  placeholder="Rent"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Food" class="form-label">Food</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Food"
+                  placeholder="Food"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Utilities" class="form-label">Utilities</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Utilities"
+                  placeholder="Utilities"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Insurance" class="form-label">Insurance</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Insurance"
+                  placeholder="Insurance"
+                />
+              </div>
+              <div id="error-data"></div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="calculate-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div class="main-form mt-2 text-white" id="form-data">
+              <h2 class="text-center">Summary</h2>
+              <h3>Total Expenses: <span id="expenses"></span></h3>
+              <h3>Total Balance: <span id="balance"></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
